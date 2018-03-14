@@ -10,34 +10,40 @@
 
 using namespace std;
 
+
+void swapTwoInt1(int a, int b){
+    int c;
+    c = a;
+    a = b;
+    b = c;
+    return;
+}
+//引用
+void swapTwoInt2(int &a, int &b){
+    int c;
+    c = a;
+    a = b;
+    b = c;
+    return;
+}
+//指针
+void swapTwoInt3(int *a, int *b){
+    int c;
+    c = *a;
+    *a = *b;
+    *b = c;
+    return;
+}
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    cout << "Hello, World!" << endl;
-//    char buf[10];
-    
-//    scanf("%s",buf);
-    
-//    fgets(buf, 10, stdin);
-    
-//    cin >> buf;
-    
-//    cin.getline(buf, 10);
-    
-//    string buf;
-//    cin>>buf;
-//    cout << buf << endl;
-    
-    int k[] = {2, 4, 6, 8, 10, 12};
-    int *p = k;
-    printf("%d\n", *p++);
-    printf("%d\n", (*p)++);
-    printf("%d\n", *++p);
-    printf("%d\n", ++*p);
-
-    
-    
-
-    
-    
+    int a = 10;
+    int b = 20;
+    swapTwoInt3(&a, &b);
+    cout << "a=" <<  a << endl;
+    cout << "b=" <<  b << endl;
     return 0;
 }
+
+
+
+
