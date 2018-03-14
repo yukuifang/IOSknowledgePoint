@@ -17,6 +17,10 @@
 		B16881F9204F81060037737D /* CalculateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16881F8204F81060037737D /* CalculateTest.swift */; };
 		B16881FB204F8B8F0037737D /* SqliteTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16881FA204F8B8F0037737D /* SqliteTool.swift */; };
 		B16881FD204F92170037737D /* SqliteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16881FC204F92170037737D /* SqliteTest.swift */; };
+		B17BAB9420576F7100939D49 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17BAB9320576F7100939D49 /* StudentModel.swift */; };
+		B17BAB9620576FEB00939D49 /* SqliteModelTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17BAB9520576FEB00939D49 /* SqliteModelTool.swift */; };
+		B17BAB9820577B3500939D49 /* ModelTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17BAB9720577B3500939D49 /* ModelTool.swift */; };
+		B17BAB9C20578ADC00939D49 /* modelToolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17BAB9B20578ADC00939D49 /* modelToolTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		B16881F8204F81060037737D /* CalculateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTest.swift; sourceTree = "<group>"; };
 		B16881FA204F8B8F0037737D /* SqliteTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteTool.swift; sourceTree = "<group>"; };
 		B16881FC204F92170037737D /* SqliteTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteTest.swift; sourceTree = "<group>"; };
+		B17BAB9320576F7100939D49 /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
+		B17BAB9520576FEB00939D49 /* SqliteModelTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteModelTool.swift; sourceTree = "<group>"; };
+		B17BAB9720577B3500939D49 /* ModelTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTool.swift; sourceTree = "<group>"; };
+		B17BAB9B20578ADC00939D49 /* modelToolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelToolTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		B16881EC204F7FFB0037737D /* unitTestDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				B17BAB9B20578ADC00939D49 /* modelToolTest.swift */,
 				B16881ED204F7FFB0037737D /* unitTestDemoTests.swift */,
 				B16881F8204F81060037737D /* CalculateTest.swift */,
 				B16881FC204F92170037737D /* SqliteTest.swift */,
@@ -112,6 +121,9 @@
 			children = (
 				B16881F6204F807C0037737D /* Calculate.swift */,
 				B16881FA204F8B8F0037737D /* SqliteTool.swift */,
+				B17BAB9520576FEB00939D49 /* SqliteModelTool.swift */,
+				B17BAB9320576F7100939D49 /* StudentModel.swift */,
+				B17BAB9720577B3500939D49 /* ModelTool.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -222,7 +234,10 @@
 				B16881F7204F807C0037737D /* Calculate.swift in Sources */,
 				B16881D8204F7FED0037737D /* ViewController.swift in Sources */,
 				B16881D6204F7FED0037737D /* AppDelegate.swift in Sources */,
+				B17BAB9820577B3500939D49 /* ModelTool.swift in Sources */,
+				B17BAB9420576F7100939D49 /* StudentModel.swift in Sources */,
 				B16881FB204F8B8F0037737D /* SqliteTool.swift in Sources */,
+				B17BAB9620576FEB00939D49 /* SqliteModelTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B16881FD204F92170037737D /* SqliteTest.swift in Sources */,
+				B17BAB9C20578ADC00939D49 /* modelToolTest.swift in Sources */,
 				B16881F9204F81060037737D /* CalculateTest.swift in Sources */,
 				B16881EE204F7FFB0037737D /* unitTestDemoTests.swift in Sources */,
 			);

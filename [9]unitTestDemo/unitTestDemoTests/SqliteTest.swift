@@ -25,8 +25,21 @@ class SqliteTest: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    func testSQL()  {
-        XCTAssertEqual(SQLiteManager.shareInstance().deal(sql: "", uid: "hello"), true)
+    func testDeal()  {
+        let sql1 = "create table  if  not exists t_stu1(myId integer  auto_increment primary key,name text,score real)"
+        XCTAssertEqual(SQLiteManager.shareInstance().deal(sql: sql1, uid: "hello"), true)
+        
+        let sql2 = "insert into t_stu1(name,score) values ('fangyukui',98.0)"
+        XCTAssertEqual(SQLiteManager.shareInstance().deal(sql: sql2, uid: "hello"), true)
+        
+    }
+    
+    
+    
+    func testQuery()  {
+        let sql = "select * from t_stu1"
+        let results = SQLiteManager.shareInstance().querySql(sql: sql, uid: "hello")
+        print(results!)
         
     }
     

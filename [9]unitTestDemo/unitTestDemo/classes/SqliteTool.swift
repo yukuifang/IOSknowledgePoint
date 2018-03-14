@@ -9,7 +9,8 @@
 import UIKit
 import SQLite3
 
-let kCachePath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.allDomainsMask, true).last!
+let kCachePath = "/Users/fangyukui/Desktop/"
+//    NSSearchPathForDirectoriesInDomains(.documentDirectory,.allDomainsMask, true).last!
 
 class SQLiteManager: NSObject {
     //MARK: - 创建类的静态实例变量即为单例对象 let-是线程安全的
@@ -57,11 +58,13 @@ class SQLiteManager: NSObject {
         }
         var results : Array<Dictionary<String,Any>>  = []
         while sqlite3_step(ppStmt) == SQLITE_ROW {
-            let rowDic :NSDictionary = [:]
+            var rowDic : Dictionary<String, Any> = [:]
+            
             // 1. 获取所有列的个数
             let columnCount = sqlite3_column_count(ppStmt)
             // 2. 遍历所有的列
             for i in 0 ..< columnCount{
+              
                let columnNamePtr =  sqlite3_column_name(ppStmt, i)
                // 2.1 获取列名
                let columnName = String(cString: columnNamePtr!)
@@ -73,23 +76,29 @@ class SQLiteManager: NSObject {
                 // 2.2.2 根据列的类型, 使用不同的函数, 进行获取
                 var value : Any?
                 switch (type) {
-                case SQLITE_INSERT:
+                case SQLITE_INTEGER:
                     value = sqlite3_column_int(ppStmt, i)
                     break
                 case SQLITE_FLOAT:
                     value = sqlite3_column_double(ppStmt, i)
+                    break
                 case SQLITE_BLOB:
                     value = sqlite3_column_blob(ppStmt, i)
+                    break
                 case SQLITE_NULL:
                     value = "";
+                    break
                 case SQLITE3_TEXT:
                     value = String(cString: sqlite3_column_text(ppStmt, i) )
+                    break
                     
                 default:
                     break
                 }
-                rowDic.setValue(value, forKey: columnName)
-                results.append(rowDic as! Dictionary<String, Any>)
+               
+                rowDic[columnName] = value
+                
+                results.append(rowDic )
                 
                 
                 
