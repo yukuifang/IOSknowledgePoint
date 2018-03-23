@@ -1,0 +1,5 @@
+target ‘YNGCD_Operation_Thread’ do
+
+pod ‘AFNetworking’
+
+end

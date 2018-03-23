@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1C7A082206499F800898DCA /* UIFont+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A081206499F800898DCA /* UIFont+Size.m */; };
 		B1D561E420479FC600241CD8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D561E320479FC600241CD8 /* AppDelegate.m */; };
 		B1D561E720479FC600241CD8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D561E620479FC600241CD8 /* ViewController.m */; };
 		B1D561EA20479FC600241CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D561E820479FC600241CD8 /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1C7A080206499F800898DCA /* UIFont+Size.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+Size.h"; sourceTree = "<group>"; };
+		B1C7A081206499F800898DCA /* UIFont+Size.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Size.m"; sourceTree = "<group>"; };
 		B1D561DF20479FC600241CD8 /* method_swizzling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = method_swizzling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D561E220479FC600241CD8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1D561E320479FC600241CD8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 			children = (
 				B1D561F92047A02400241CD8 /* UIViewController+LifeCycleTracking.h */,
 				B1D561FA2047A02400241CD8 /* UIViewController+LifeCycleTracking.m */,
+				B1C7A080206499F800898DCA /* UIFont+Size.h */,
+				B1C7A081206499F800898DCA /* UIFont+Size.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				B1D561F220479FC600241CD8 /* main.m in Sources */,
 				B1D561FB2047A02400241CD8 /* UIViewController+LifeCycleTracking.m in Sources */,
 				B1D561E420479FC600241CD8 /* AppDelegate.m in Sources */,
+				B1C7A082206499F800898DCA /* UIFont+Size.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

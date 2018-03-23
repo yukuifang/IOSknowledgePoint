@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B134DFA220637D2E009ACD3F /* reload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B134DFA020637D2E009ACD3F /* reload.cpp */; };
 		B17BAB8D2057666B00939D49 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17BAB8C2057666B00939D49 /* main.cpp */; };
+		B1C7A07F206494BB00898DCA /* MyTeacher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A07D206494BB00898DCA /* MyTeacher.cpp */; };
+		B1C7A0852064AD3400898DCA /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A0832064AD3400898DCA /* Cube.cpp */; };
+		B1C7A0882064DA5E00898DCA /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A0862064DA5E00898DCA /* Test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B134DFA020637D2E009ACD3F /* reload.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = reload.cpp; sourceTree = "<group>"; };
+		B134DFA120637D2E009ACD3F /* reload.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = reload.hpp; sourceTree = "<group>"; };
 		B17BAB892057666B00939D49 /* day01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = day01; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17BAB8C2057666B00939D49 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B1C7A07D206494BB00898DCA /* MyTeacher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyTeacher.cpp; sourceTree = "<group>"; };
+		B1C7A07E206494BB00898DCA /* MyTeacher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyTeacher.hpp; sourceTree = "<group>"; };
+		B1C7A0832064AD3400898DCA /* Cube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cube.cpp; sourceTree = "<group>"; };
+		B1C7A0842064AD3400898DCA /* Cube.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cube.hpp; sourceTree = "<group>"; };
+		B1C7A0862064DA5E00898DCA /* Test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
+		B1C7A0872064DA5E00898DCA /* Test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Test.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				B17BAB8C2057666B00939D49 /* main.cpp */,
+				B134DFA020637D2E009ACD3F /* reload.cpp */,
+				B134DFA120637D2E009ACD3F /* reload.hpp */,
+				B1C7A07E206494BB00898DCA /* MyTeacher.hpp */,
+				B1C7A07D206494BB00898DCA /* MyTeacher.cpp */,
+				B1C7A0832064AD3400898DCA /* Cube.cpp */,
+				B1C7A0842064AD3400898DCA /* Cube.hpp */,
+				B1C7A0862064DA5E00898DCA /* Test.cpp */,
+				B1C7A0872064DA5E00898DCA /* Test.hpp */,
 			);
 			path = day01;
 			sourceTree = "<group>";
@@ -119,7 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C7A0852064AD3400898DCA /* Cube.cpp in Sources */,
+				B134DFA220637D2E009ACD3F /* reload.cpp in Sources */,
+				B1C7A07F206494BB00898DCA /* MyTeacher.cpp in Sources */,
 				B17BAB8D2057666B00939D49 /* main.cpp in Sources */,
+				B1C7A0882064DA5E00898DCA /* Test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
