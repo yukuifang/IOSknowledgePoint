@@ -13,6 +13,9 @@
 #include "Test.hpp"
 #include "friend.hpp"
 #include "OperationOverload.hpp"
+#include "EqualOperation.hpp"
+#include "Array.hpp"
+#include "MyString.hpp"
 
 typedef void(*MyFuncPtr)(int a,int b);
 using namespace std;
@@ -94,42 +97,80 @@ int main(int argc, const char * argv[]) {
 //    b.modifyA();
     
     
-    Complex a(1,2);
-    Complex b(1,2);
-    Complex c = a + b;
-    c.description();
-    Complex d = a - b;
-    d.description();
-    Complex e(1,2);
-    ++e;
-    --e;
-    e.description();
-    Complex f(1,2);
-    Complex temp =  f++;
-    temp.description();
-    f.description();
-    
-    Complex g(1,1);
-    Complex temp2 =  g--;
-    temp2.description();
-    g.description();
-    
-    
+//    Complex a(1,2);
+//    Complex b(1,2);
+//    Complex c = a + b;
+//    c.description();
+//    Complex d = a - b;
+//    d.description();
+//    Complex e(1,2);
+//    ++e;
+//    --e;
+//    e.description();
+//    Complex f(1,2);
+//    Complex temp =  f++;
+//    temp.description();
+//    f.description();
+//
+//    Complex g(1,1);
+//    Complex temp2 =  g--;
+//    temp2.description();
+//    g.description();
     
     
+//    Complex a(1,2);
+//    Complex b(1,2);
+//    cout<< a << "支持链式编程输出" << endl;
+    
+    
+//    Name n1("fangyuykui");
+//    Name n2("yu-vin");
+//    n1.description();
+//    n2.description();
+//    n1 = n2;
+//
+//    n1.description();
+//    n2.description();
+//
+//
+//    Name n3 = n2;
+//    n3.description();
+//    n2.description();
+    
+    
+//    Array a(10);
+//    for (int i=0; i<10; i++) {
+//        a[i] = 6;
+//        cout << a[i] << endl;
+//    }
+//
+//    Array b(5);
+//    Array c(8);
+//
+//    if (a == b) {
+//        cout<<"相等" << endl;
+//    }else{
+//        cout<<"不相等" << endl;
+//    }
+//    b = c = a;
+//    if (a == b) {
+//        cout<<"相等" << endl;
+//    }else{
+//        cout<<"不相等" << endl;
+//    }
+//    cout <<b.getLength() << c.getLength() << endl;
     
     
     
-   
     
-   
+    MyString s;
+    s.description();
+    MyString s2("666");
+    s2.description();
+    MyString s3 = s2;
+    s3.description();
     
     
-    
-    
-    
-    
-
     
     
     return 0;

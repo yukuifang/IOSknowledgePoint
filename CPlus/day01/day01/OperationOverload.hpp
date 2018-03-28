@@ -11,9 +11,7 @@
 using namespace std;
 
 class Complex{
-    friend Complex operator-(Complex &a,Complex &b);
-    friend Complex& operator++(Complex &a);
-    friend Complex  operator++(Complex &a,int);
+    friend ostream& operator<<(ostream &cout, Complex &c);
 private:
     int x;
     int y;
@@ -26,8 +24,22 @@ public:
     Complex operator+(Complex &c){
         return Complex(c.x + this->x,c.y + this->y);
     }
+    Complex operator-(Complex &c){
+        return Complex(c.x - this->x,c.y - this->y);
+    }
     Complex operator*(Complex &c){
         return Complex(c.x * this->x,c.y * this->y);
+    }
+    Complex& operator++(){
+        ++ this->x;
+        ++ this->y;
+        return *this;
+    }
+    Complex operator++(int){
+        Complex temp = *this;
+        this->x++;
+        this->y++;
+        return temp;
     }
     Complex& operator--(){
         -- this->x;
@@ -40,19 +52,20 @@ public:
         this->y--;
         return temp;
     }
-    
+    void operator=(Complex &c){
+        
+        
+    }
     void description(){
         cout << "x=" << this->x << ",and,y=" << this->y <<endl;
         
     }
-    
-    
 };
-Complex operator-(Complex &a,Complex &b);
+//友元类应用场景
+ostream& operator<<(ostream &cout, Complex &c);
 
-Complex& operator++(Complex &a);
 
-Complex  operator++(Complex &a,int);
+
 
 
 

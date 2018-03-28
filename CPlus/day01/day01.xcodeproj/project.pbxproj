@@ -11,6 +11,9 @@
 		B134DFA220637D2E009ACD3F /* reload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B134DFA020637D2E009ACD3F /* reload.cpp */; };
 		B1639830206A0018006937B0 /* friend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B163982E206A0018006937B0 /* friend.cpp */; };
 		B1639833206A1405006937B0 /* OperationOverload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1639831206A1405006937B0 /* OperationOverload.cpp */; };
+		B173D10D206B517F004170DF /* EqualOperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B173D10B206B517F004170DF /* EqualOperation.cpp */; };
+		B173D110206B6FFA004170DF /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B173D10E206B6FFA004170DF /* Array.cpp */; };
+		B173D113206B825A004170DF /* MyString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B173D111206B825A004170DF /* MyString.cpp */; };
 		B17BAB8D2057666B00939D49 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17BAB8C2057666B00939D49 /* main.cpp */; };
 		B1C7A07F206494BB00898DCA /* MyTeacher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A07D206494BB00898DCA /* MyTeacher.cpp */; };
 		B1C7A0852064AD3400898DCA /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A0832064AD3400898DCA /* Cube.cpp */; };
@@ -38,6 +41,12 @@
 		B163982F206A0018006937B0 /* friend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = friend.hpp; sourceTree = "<group>"; };
 		B1639831206A1405006937B0 /* OperationOverload.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OperationOverload.cpp; sourceTree = "<group>"; };
 		B1639832206A1405006937B0 /* OperationOverload.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OperationOverload.hpp; sourceTree = "<group>"; };
+		B173D10B206B517F004170DF /* EqualOperation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EqualOperation.cpp; sourceTree = "<group>"; };
+		B173D10C206B517F004170DF /* EqualOperation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EqualOperation.hpp; sourceTree = "<group>"; };
+		B173D10E206B6FFA004170DF /* Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Array.cpp; sourceTree = "<group>"; };
+		B173D10F206B6FFA004170DF /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		B173D111206B825A004170DF /* MyString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyString.cpp; sourceTree = "<group>"; };
+		B173D112206B825A004170DF /* MyString.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyString.hpp; sourceTree = "<group>"; };
 		B17BAB892057666B00939D49 /* day01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = day01; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17BAB8C2057666B00939D49 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B1C7A07D206494BB00898DCA /* MyTeacher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyTeacher.cpp; sourceTree = "<group>"; };
@@ -93,6 +102,12 @@
 				B163982F206A0018006937B0 /* friend.hpp */,
 				B1639831206A1405006937B0 /* OperationOverload.cpp */,
 				B1639832206A1405006937B0 /* OperationOverload.hpp */,
+				B173D10B206B517F004170DF /* EqualOperation.cpp */,
+				B173D10C206B517F004170DF /* EqualOperation.hpp */,
+				B173D10E206B6FFA004170DF /* Array.cpp */,
+				B173D10F206B6FFA004170DF /* Array.hpp */,
+				B173D111206B825A004170DF /* MyString.cpp */,
+				B173D112206B825A004170DF /* MyString.hpp */,
 			);
 			path = day01;
 			sourceTree = "<group>";
@@ -162,6 +177,9 @@
 				B1C7A07F206494BB00898DCA /* MyTeacher.cpp in Sources */,
 				B17BAB8D2057666B00939D49 /* main.cpp in Sources */,
 				B1C7A0882064DA5E00898DCA /* Test.cpp in Sources */,
+				B173D113206B825A004170DF /* MyString.cpp in Sources */,
+				B173D10D206B517F004170DF /* EqualOperation.cpp in Sources */,
+				B173D110206B6FFA004170DF /* Array.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

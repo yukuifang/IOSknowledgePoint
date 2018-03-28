@@ -8,21 +8,9 @@
 
 #include "OperationOverload.hpp"
 
-
-Complex operator-(Complex &a,Complex &b){
-    Complex c(a.x - b.x, a.y - b.y);
-    return c;
+ostream& operator<<(ostream &cout, Complex &c){
+    cout<< "生活如此艰难"<<endl;
+    cout << c.x << c.y << endl;
+    return cout;
 }
 
-Complex& operator++(Complex &a){
-    ++a.x;
-    ++a.y;
-    return a;
-}
-
-Complex operator++(Complex &a,int){
-    Complex temp = a;
-    a.x++;
-    a.y++;
-    return temp;
-}
