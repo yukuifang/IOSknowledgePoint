@@ -58,7 +58,5 @@ Test::~Test(){
         free(this->p);
         this->p = NULL;
     }
-    
-    
     cout << "析构工作" <<endl;
 }

@@ -11,9 +11,14 @@
 #include "MyTeacher.hpp"
 #include "Cube.hpp"
 #include "Test.hpp"
+#include "friend.hpp"
+#include "OperationOverload.hpp"
 
 typedef void(*MyFuncPtr)(int a,int b);
 using namespace std;
+
+
+
 
 
 void swapTwoInt1(int a, int b){
@@ -79,9 +84,38 @@ int main(int argc, const char * argv[]) {
 //    Test t = (1,2);
 //    Test t = Test(1,2);
     
-    Test t1(1,2);
-    Test t2 = t1; // 拷贝时机，用一个对象初始化一个对象才会调用拷贝构造,如果是一个对象赋值一个对象是不会调用拷贝构造
-    t2.printMessage();
+//    Test t1(1,2);
+//    Test t2 = t1; // 拷贝时机，用一个对象初始化一个对象才会调用拷贝构造,如果是一个对象赋值一个对象是不会调用拷贝构造
+//    t2.printMessage();
+    
+    
+    
+//    B b;
+//    b.modifyA();
+    
+    
+    Complex a(1,2);
+    Complex b(1,2);
+    Complex c = a + b;
+    c.description();
+    Complex d = a - b;
+    d.description();
+    Complex e(1,2);
+    ++e;
+    --e;
+    e.description();
+    Complex f(1,2);
+    Complex temp =  f++;
+    temp.description();
+    f.description();
+    
+    Complex g(1,1);
+    Complex temp2 =  g--;
+    temp2.description();
+    g.description();
+    
+    
+    
     
     
     
@@ -100,6 +134,7 @@ int main(int argc, const char * argv[]) {
     
     return 0;
 }
+
 
 
 
