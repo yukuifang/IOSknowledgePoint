@@ -16,6 +16,12 @@
 #include "EqualOperation.hpp"
 #include "Array.hpp"
 #include "MyString.hpp"
+#include "Extend.hpp"
+#include "Extend_1.hpp"
+#include "Extend_2.hpp"
+#include "VirtureExtend.hpp"
+#include "Polymorphism.hpp"
+#include "VirtureDestruct.hpp"
 
 typedef void(*MyFuncPtr)(int a,int b);
 using namespace std;
@@ -163,16 +169,95 @@ int main(int argc, const char * argv[]) {
     
     
     
-    MyString s;
-    s.description();
-    MyString s2("666");
-    s2.description();
-    MyString s3 = s2;
-    s3.description();
+//    MyString s;
+//    s.description();
+//    MyString s2("666");
+//    s2.description();
+//    MyString s3 = s2;
+//    s3.description();
+  
+    
+//    MyString s1("888");
+//    MyString s2("888");
+//    cout << s1 << s2 <<  endl;
+//    if (s1 == s2) {
+//        cout<<"想等"<<endl;
+//    }else{
+//        cout << "不相等"<<endl;
+//    }
+    
+  
+//    Chird1 c1;
+//    cout << c1.c << endl;
+//
+//    Chird2 c2;
+//   // cout << c2.c << endl; //Cannot cast 'Chird2' to its protected base class 'Parent'
+//
+//    Chird3 c3;
+//   // cout << c3.c << endl; //Cannot cast 'Chird3' to its private base class 'Parent'
+    
+    
+//    AChrid c(1,2,3);
+    
+    
+//    BChrid b(1,2);
+    
+    
+//    K3 k3;
+//
+//    k3.b = 100;
+//
+//    k3.c = 200;
+//
+//    k3.d = 300;
+//
+//    k3.a = 400;
+    
+    
+    
+//    E3 e3;
+//
+//    e3.E1::a = 100;
+//
+//    e3.E2::a = 200;
+    
+ 
+//
+//    KPatent *ptr = NULL;
+//
+//    KPatent p(200);
+//
+//    KChrid c(100);
+//
+//    ptr = &p;
+//
+//    ptr->descripsion();
+//
+//    ptr->parentFun();
+//
+//    ptr = &c;
+//
+//    ptr->descripsion();
+//
+//    ptr->parentFun();
+    
+//    ptr->chridFun() //访问不了的
+    
+    
+    J *j = new JB;
+    
+    delete j;
     
     
     
     
+    
+    
+    
+    
+    
+    
+
     return 0;
 }
 

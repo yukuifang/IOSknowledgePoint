@@ -11,13 +11,19 @@
 		B134DFA220637D2E009ACD3F /* reload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B134DFA020637D2E009ACD3F /* reload.cpp */; };
 		B1639830206A0018006937B0 /* friend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B163982E206A0018006937B0 /* friend.cpp */; };
 		B1639833206A1405006937B0 /* OperationOverload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1639831206A1405006937B0 /* OperationOverload.cpp */; };
+		B170E30B206C986B0071AFF4 /* Extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B170E309206C986B0071AFF4 /* Extend.cpp */; };
 		B173D10D206B517F004170DF /* EqualOperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B173D10B206B517F004170DF /* EqualOperation.cpp */; };
 		B173D110206B6FFA004170DF /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B173D10E206B6FFA004170DF /* Array.cpp */; };
 		B173D113206B825A004170DF /* MyString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B173D111206B825A004170DF /* MyString.cpp */; };
 		B17BAB8D2057666B00939D49 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17BAB8C2057666B00939D49 /* main.cpp */; };
+		B18D030F2071C9100020989D /* VirtureExtend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B18D030D2071C9100020989D /* VirtureExtend.cpp */; };
+		B18D03122071D5F50020989D /* Polymorphism.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B18D03102071D5F50020989D /* Polymorphism.cpp */; };
+		B18D031520720AB80020989D /* VirtureDestruct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B18D031320720AB80020989D /* VirtureDestruct.cpp */; };
 		B1C7A07F206494BB00898DCA /* MyTeacher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A07D206494BB00898DCA /* MyTeacher.cpp */; };
 		B1C7A0852064AD3400898DCA /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A0832064AD3400898DCA /* Cube.cpp */; };
 		B1C7A0882064DA5E00898DCA /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A0862064DA5E00898DCA /* Test.cpp */; };
+		B1C8BA32206DD3A000E321A9 /* Extend_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C8BA30206DD3A000E321A9 /* Extend_1.cpp */; };
+		B1C8BA35206DD8C000E321A9 /* Extend_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C8BA33206DD8C000E321A9 /* Extend_2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +47,8 @@
 		B163982F206A0018006937B0 /* friend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = friend.hpp; sourceTree = "<group>"; };
 		B1639831206A1405006937B0 /* OperationOverload.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OperationOverload.cpp; sourceTree = "<group>"; };
 		B1639832206A1405006937B0 /* OperationOverload.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OperationOverload.hpp; sourceTree = "<group>"; };
+		B170E309206C986B0071AFF4 /* Extend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Extend.cpp; sourceTree = "<group>"; };
+		B170E30A206C986B0071AFF4 /* Extend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Extend.hpp; sourceTree = "<group>"; };
 		B173D10B206B517F004170DF /* EqualOperation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EqualOperation.cpp; sourceTree = "<group>"; };
 		B173D10C206B517F004170DF /* EqualOperation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EqualOperation.hpp; sourceTree = "<group>"; };
 		B173D10E206B6FFA004170DF /* Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Array.cpp; sourceTree = "<group>"; };
@@ -49,12 +57,22 @@
 		B173D112206B825A004170DF /* MyString.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyString.hpp; sourceTree = "<group>"; };
 		B17BAB892057666B00939D49 /* day01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = day01; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17BAB8C2057666B00939D49 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B18D030D2071C9100020989D /* VirtureExtend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VirtureExtend.cpp; sourceTree = "<group>"; };
+		B18D030E2071C9100020989D /* VirtureExtend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VirtureExtend.hpp; sourceTree = "<group>"; };
+		B18D03102071D5F50020989D /* Polymorphism.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Polymorphism.cpp; sourceTree = "<group>"; };
+		B18D03112071D5F50020989D /* Polymorphism.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Polymorphism.hpp; sourceTree = "<group>"; };
+		B18D031320720AB80020989D /* VirtureDestruct.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VirtureDestruct.cpp; sourceTree = "<group>"; };
+		B18D031420720AB80020989D /* VirtureDestruct.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VirtureDestruct.hpp; sourceTree = "<group>"; };
 		B1C7A07D206494BB00898DCA /* MyTeacher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyTeacher.cpp; sourceTree = "<group>"; };
 		B1C7A07E206494BB00898DCA /* MyTeacher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyTeacher.hpp; sourceTree = "<group>"; };
 		B1C7A0832064AD3400898DCA /* Cube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cube.cpp; sourceTree = "<group>"; };
 		B1C7A0842064AD3400898DCA /* Cube.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cube.hpp; sourceTree = "<group>"; };
 		B1C7A0862064DA5E00898DCA /* Test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
 		B1C7A0872064DA5E00898DCA /* Test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Test.hpp; sourceTree = "<group>"; };
+		B1C8BA30206DD3A000E321A9 /* Extend_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Extend_1.cpp; sourceTree = "<group>"; };
+		B1C8BA31206DD3A000E321A9 /* Extend_1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Extend_1.hpp; sourceTree = "<group>"; };
+		B1C8BA33206DD8C000E321A9 /* Extend_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Extend_2.cpp; sourceTree = "<group>"; };
+		B1C8BA34206DD8C000E321A9 /* Extend_2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Extend_2.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +126,18 @@
 				B173D10F206B6FFA004170DF /* Array.hpp */,
 				B173D111206B825A004170DF /* MyString.cpp */,
 				B173D112206B825A004170DF /* MyString.hpp */,
+				B170E309206C986B0071AFF4 /* Extend.cpp */,
+				B170E30A206C986B0071AFF4 /* Extend.hpp */,
+				B1C8BA30206DD3A000E321A9 /* Extend_1.cpp */,
+				B1C8BA31206DD3A000E321A9 /* Extend_1.hpp */,
+				B1C8BA33206DD8C000E321A9 /* Extend_2.cpp */,
+				B1C8BA34206DD8C000E321A9 /* Extend_2.hpp */,
+				B18D030D2071C9100020989D /* VirtureExtend.cpp */,
+				B18D030E2071C9100020989D /* VirtureExtend.hpp */,
+				B18D03102071D5F50020989D /* Polymorphism.cpp */,
+				B18D03112071D5F50020989D /* Polymorphism.hpp */,
+				B18D031320720AB80020989D /* VirtureDestruct.cpp */,
+				B18D031420720AB80020989D /* VirtureDestruct.hpp */,
 			);
 			path = day01;
 			sourceTree = "<group>";
@@ -171,13 +201,19 @@
 			files = (
 				B107349220689BDE00016A13 /* Test2.cpp in Sources */,
 				B1639830206A0018006937B0 /* friend.cpp in Sources */,
+				B1C8BA35206DD8C000E321A9 /* Extend_2.cpp in Sources */,
 				B1C7A0852064AD3400898DCA /* Cube.cpp in Sources */,
+				B18D03122071D5F50020989D /* Polymorphism.cpp in Sources */,
+				B1C8BA32206DD3A000E321A9 /* Extend_1.cpp in Sources */,
+				B170E30B206C986B0071AFF4 /* Extend.cpp in Sources */,
 				B1639833206A1405006937B0 /* OperationOverload.cpp in Sources */,
 				B134DFA220637D2E009ACD3F /* reload.cpp in Sources */,
 				B1C7A07F206494BB00898DCA /* MyTeacher.cpp in Sources */,
 				B17BAB8D2057666B00939D49 /* main.cpp in Sources */,
 				B1C7A0882064DA5E00898DCA /* Test.cpp in Sources */,
+				B18D031520720AB80020989D /* VirtureDestruct.cpp in Sources */,
 				B173D113206B825A004170DF /* MyString.cpp in Sources */,
+				B18D030F2071C9100020989D /* VirtureExtend.cpp in Sources */,
 				B173D10D206B517F004170DF /* EqualOperation.cpp in Sources */,
 				B173D110206B6FFA004170DF /* Array.cpp in Sources */,
 			);

@@ -7,3 +7,8 @@
 //
 
 #include "MyString.hpp"
+
+ostream & operator<<(ostream &cout,MyString &obj) {
+    cout << obj.p << endl;
+    return cout;
+}
