@@ -18,11 +18,11 @@
 
 -(void)testRealm{
     Student *s = [[Student alloc]initWithValue:@{@"age":@66666,@"name":@"fangyukui"}];
-    RLMRealm *RLM = [RLMRealm defaultRealm];
-    [RLM beginWriteTransaction];
-    [RLM addObject:s];
-    [RLM commitWriteTransaction];
-    NSLog(@"%d",s.age);
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm beginWriteTransaction];
+    [realm addObject:s];
+    [realm commitWriteTransaction];
+    NSLog(@"%@",s.name);
     
 }
 

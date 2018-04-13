@@ -10,4 +10,8 @@
 
 @implementation Student
 
++(NSString *)primaryKey{
+    return @"stuId";
+}
+
 @end

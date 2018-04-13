@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
+#import "Student.h"
 #import <Realm/Realm.h>
 
 @interface RealmUseTests : XCTestCase
@@ -29,6 +30,12 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    Student *s = [[Student alloc]initWithValue:@{@"age":@66666,@"name":@"fangyukui"}];
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm beginWriteTransaction];
+    [realm addObject:s];
+    [realm commitWriteTransaction];
+    NSLog(@"%@",s.name);
 }
 
 - (void)testPerformanceExample {

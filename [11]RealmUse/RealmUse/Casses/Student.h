@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <Realm/Realm.h>
 @interface Student : RLMObject
+@property int stuId;
 @property int age;
 @property NSString *name;
+
 @end
+
+RLM_ARRAY_TYPE(Student)
