@@ -18,6 +18,8 @@
     [super viewDidLoad];
     
     [self demo3];
+    
+//    [self demo4];
     // Do any additional setup after loading the view, typically from a nib.
     
   
@@ -73,6 +75,13 @@
 //    
 //    [op3 addDependency:op2]; //依赖关系，可以跨队列
 //    
+    
+    
+}
+
+-(void)demo4{
+    sleep(3);
+    NSLog(@"888");
     
     
 }
