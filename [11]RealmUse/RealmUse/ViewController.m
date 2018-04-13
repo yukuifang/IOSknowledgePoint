@@ -21,7 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    [self insertObj];
-    [self updateObj];
+//    [self updateObj];
+    [self delObj];
     
 }
 
@@ -83,11 +84,31 @@
 //        [Student createOrUpdateInRealm:realm withValue:@{@"stuId":@8,@"age":@7878,@"name":@"heheda"}];
 //        
 //    }];
+ 
+}
+-(void)delObj{
+    //方法1
+    RLMRealm *realm = [RLMRealm defaultRealm];
+//    Student *s  = [[Student objectsWhere:@"name = 'yu-vin'"]firstObject];
+//    [realm transactionWithBlock:^{
+//        [realm deleteObject:s];
+//    }];
+    //方法2:删除所有模型
+//    [realm transactionWithBlock:^{
+//        [realm deleteAllObjects];
+//    }];
+    
+//    方法3:
+    [realm transactionWithBlock:^{
+        //获取Student模型所有对象,不是一下子将所有数据加载到内存，只是加载了数据的引用，当访问修改的时候才
+       RLMResults *resluts =  [Student allObjects];
+    }];
     
     
     
     
-   
-  
+    
+    
+    
 }
 @end
