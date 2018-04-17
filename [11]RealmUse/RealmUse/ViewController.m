@@ -12,6 +12,8 @@
 
 #import "Dog.h"
 
+#import "Car.h"
+
 #import <Realm/Realm.h>
 
 @interface ViewController ()
@@ -25,8 +27,19 @@
 //    [self insertObj];
 //    [self updateObj];
 //    [self delObj];
+//    [self relative];
     
-    [self relative];
+    [self defaultValue];
+    
+}
+
+-(void)defaultValue{
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    Car *c  = [[Car alloc]init];
+    [realm transactionWithBlock:^{
+        [realm addObject:c];
+        
+    }];
     
 }
 
@@ -127,10 +140,6 @@
     Student *findS  = [[Student allObjects]firstObject];
     Dog *findD = findS.pets.firstObject;
     NSLog(@"%@",findD.master);
-    
-    
-    
-    
     
 }
 @end
