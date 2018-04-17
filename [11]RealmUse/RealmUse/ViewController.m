@@ -10,6 +10,8 @@
 
 #import "Student.h"
 
+#import "Dog.h"
+
 #import <Realm/Realm.h>
 
 @interface ViewController ()
@@ -22,13 +24,15 @@
     [super viewDidLoad];
 //    [self insertObj];
 //    [self updateObj];
-    [self delObj];
+//    [self delObj];
+    
+    [self relative];
     
 }
 
 #pragma mark -增
 -(void)insertObj{
-    Student *s = [[Student alloc]initWithValue:@{@"stuId":@1,@"age":@0000,@"name":@"yu-vin"}];
+    Student *s = [[Student alloc]initWithValue:@{@"stuId":@2,@"age":@0000,@"name":@"yu-vin"}];
     RLMRealm *realm = [RLMRealm defaultRealm];
     
 //    //方法1
@@ -103,8 +107,26 @@
         //获取Student模型所有对象,不是一下子将所有数据加载到内存，只是加载了数据的引用，当访问修改的时候才
        RLMResults *resluts =  [Student allObjects];
     }];
+}
+-(void)relative{
+    Dog *d1 = [[Dog alloc]initWithValue:@{@"nickName":@"dog1",@"hobby":@"sleep"}];
+    Dog *d2 = [[Dog alloc]initWithValue:@{@"nickName":@"dog2",@"hobby":@"eat"}];
+    Student *s  =[[Student alloc]init];
+    s.name = @"fangfang";
+    s.stuId = 7;
+    s.age = 22;
+    [s.pets addObject:d1];
+    [s.pets addObject:d2];
     
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm transactionWithBlock:^{
+        [realm addObject:s];
+        
+    }];
     
+    Student *findS  = [[Student allObjects]firstObject];
+    Dog *findD = findS.pets.firstObject;
+    NSLog(@"%@",findD.master);
     
     
     

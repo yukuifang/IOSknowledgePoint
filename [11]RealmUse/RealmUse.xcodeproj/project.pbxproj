@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B179C83E2084D5CC00AC05CC /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = B179C83D2084D5CC00AC05CC /* Dog.m */; };
 		B1A997C3207F533E00DD651A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A997C2207F533E00DD651A /* AppDelegate.m */; };
 		B1A997C6207F533E00DD651A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A997C5207F533E00DD651A /* ViewController.m */; };
 		B1A997C9207F533E00DD651A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A997C7207F533E00DD651A /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 		47B7664F7F551CFAE7A5767D /* libPods-RealmUseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmUseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E19CE1D08E4EB758280B8B /* Pods-RealmUseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmUseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmUseTests/Pods-RealmUseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A3F2A00C01010BD22D9A2F52 /* Pods-RealmUse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmUse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmUse/Pods-RealmUse.debug.xcconfig"; sourceTree = "<group>"; };
+		B179C83C2084D5CC00AC05CC /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		B179C83D2084D5CC00AC05CC /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		B1A997BE207F533E00DD651A /* RealmUse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmUse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A997C1207F533E00DD651A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B1A997C2207F533E00DD651A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 			children = (
 				B1A997E8207F573E00DD651A /* Student.h */,
 				B1A997E9207F573E00DD651A /* Student.m */,
+				B179C83C2084D5CC00AC05CC /* Dog.h */,
+				B179C83D2084D5CC00AC05CC /* Dog.m */,
 			);
 			path = Casses;
 			sourceTree = "<group>";
@@ -315,7 +320,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		7262E7A70D293173AD06BE48 /* [CP] Embed Pods Frameworks */ = {
@@ -348,7 +353,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -360,6 +365,7 @@
 			files = (
 				B1A997C6207F533E00DD651A /* ViewController.m in Sources */,
 				B1A997D1207F533E00DD651A /* main.m in Sources */,
+				B179C83E2084D5CC00AC05CC /* Dog.m in Sources */,
 				B1A997C3207F533E00DD651A /* AppDelegate.m in Sources */,
 				B1A997EA207F573E00DD651A /* Student.m in Sources */,
 			);
