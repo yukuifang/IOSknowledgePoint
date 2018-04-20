@@ -22,12 +22,16 @@
 #include "VirtureExtend.hpp"
 #include "Polymorphism.hpp"
 #include "VirtureDestruct.hpp"
+#include "Step.hpp"
+#include "Figure.hpp"
 
 typedef void(*MyFuncPtr)(int a,int b);
 using namespace std;
 
 
-
+int add(int a,int b){
+    return a + b;
+}
 
 
 void swapTwoInt1(int a, int b){
@@ -244,22 +248,107 @@ int main(int argc, const char * argv[]) {
 //    ptr->chridFun() //访问不了的
     
     
-    J *j = new JB;
-    
-    delete j;
-    
-    
+//    J *j = new JB;
+//
+//    delete j;
     
     
+//    Step_Parent *pP = NULL;
+//
+//    Step_Chird *pC = NULL;
+//
+//    Step_Chird c[] = {Step_Chird(1),Step_Chird(2),Step_Chird(3),Step_Chird(4)};
+//
+//    pP = c;
+//    pC = c;
+//    pP ->description();
+//    pC->description();
+//
+//    pP++;
+//    pC++;
+//    pP ->description();
+//    pC ->description();
+//
+//    pP++;
+//    pC++;
+//    pP ->description();
+//    pC ->description();
     
     
     
+//    Triangle t;
+//    t.getArea();
+//    Square s;
+//    s.getArea();
+    
+    
+//    FigureAbstract *f = NULL;
+//    Triangle t;
+//    f = &t;
+//    f->getArea();
+//    Square s;
+//    f = &s;
+//    f->getArea();
+    
+    
+//    int a[10];
+    // a 代表的是数组首元素的地址 &a代表整个数组的地址， 两个步长不一样:a+1的步长是 4 * 1 = 4字节;&a + 1的步长是 4 *10  * 1 = 40字节
+//    {
+//        typedef int (myTypeArray)[10];
+//        myTypeArray array;
+//        array[0] = 666;
+//        printf("%d",array[0]);
+//    }
+//
+//    {
+//        int a[10];
+//        //一个指向10个int元素的数组地址
+//        typedef int (*PTypeArray) [10];
+//        PTypeArray pTypeArray = NULL;
+//        pTypeArray = &a;
+//        (*pTypeArray)[0] = 888;
+//        printf("%d",a[0]);
+//
+//
+//    }
+//    {
+//        int a[10];
+//        int (*myPointer)[10];
+//        myPointer = &a;
+//        (*myPointer)[0]= 111;
+//        printf("%d",a[0]);
+//
+//    }
     
     
     
-
+//    {
+//
+//        typedef int (MyFucType)(int a,int b);
+//        MyFucType *myFucPointer = NULL;
+//        myFucPointer = add;
+//        printf("%d",myFucPointer(1,2));
+//
+//    }
+//    {
+//
+//        typedef int (*MyFucType)(int a,int b);
+//        MyFucType pointer = NULL;
+//        pointer = add;
+//        printf("%d",pointer(1,2));
+//        
+//    }
+//    {
+//        int (*myFucPoint)(int a,int b);
+//        myFucPoint = add;
+//        printf("%d",myFucPoint(1,2));
+//
+//    }
+    
+    
     return 0;
 }
+
 
 
 
