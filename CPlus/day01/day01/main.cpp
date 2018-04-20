@@ -336,7 +336,7 @@ int main(int argc, const char * argv[]) {
 //        MyFucType pointer = NULL;
 //        pointer = add;
 //        printf("%d",pointer(1,2));
-//        
+//
 //    }
 //    {
 //        int (*myFucPoint)(int a,int b);
