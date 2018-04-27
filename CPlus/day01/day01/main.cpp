@@ -24,6 +24,7 @@
 #include "VirtureDestruct.hpp"
 #include "Step.hpp"
 #include "Figure.hpp"
+#include "MethodTemplate.hpp"
 
 typedef void(*MyFuncPtr)(int a,int b);
 using namespace std;
@@ -344,6 +345,44 @@ int main(int argc, const char * argv[]) {
 //        printf("%d",myFucPoint(1,2));
 //
 //    }
+    
+    
+    {
+        int myArray[] = {11,33,2,6,10,1,99,44};
+//        myArray 代表的是数组首元素的地址，也代表数组的变量  &myArray代表整个数组的地址， *myArray代表第一个元素的变量
+//        int size = sizeof(myArray)/sizeof(*myArray);
+//
+//        int result =  mySort<int, int>(myArray, size);
+//
+//        cout <<  result << endl;
+//
+//        cout <<  addTemplate<int>(1.8, 2) <<endl;
+//
+//        cout <<  addTemplate<float>(1.8, 2) <<endl;
+//
+//        int a = 20;
+//        int b = 30;
+//        myChange(a, b);
+//        cout << a <<endl  << b << endl;
+        
+//        string c = "hello" ;
+//        string d = "world";
+//        myChange(c , d);
+//        cout << c << endl <<  d <<endl;
+        
+        
+        
+    }
+    
+    {
+//        int a = 10;
+//        char b = 'h';
+//        myChange(b, a);
+//        myChange(a, a);
+//        myChange(b, b);
+//        myChange(a, b);
+        
+    }
     
     
     return 0;
