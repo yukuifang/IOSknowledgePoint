@@ -9,8 +9,50 @@
 #include "OperationOverload.hpp"
 
 ostream& operator<<(ostream &cout, Complex &c){
-    cout<< "生活如此艰难"<<endl;
-    cout << c.x << c.y << endl;
+    cout << "x=" <<  c.x << ",y=" << c.y << " ";
     return cout;
 }
+Complex::Complex(int x,int y){
+    this->x = x;
+    this->y = y;
+}
+
+Complex Complex::operator+(const Complex &c){
+    return Complex(c.x + this->x,c.y + this->y);
+}
+
+Complex Complex::operator-(const Complex &c){
+    return Complex(c.x - this->x,c.y - this->y);
+}
+
+Complex Complex::operator*(const Complex &c){
+    return Complex(c.x * this->x,c.y * this->y);
+}
+
+Complex& Complex::operator++(){
+    ++ this->x;
+    ++ this->y;
+    return *this;
+}
+Complex& Complex::operator++(int){
+    this->x++;
+    this->y++;
+    return *this;
+}
+Complex& Complex::operator--(){
+    -- this->x;
+    -- this->y;
+    return *this;
+}
+Complex Complex::operator--(int){
+    this->x--;
+    this->y--;
+    return *this;
+}
+
+void Complex::description(){
+    cout << "x=" << this->x << ",and,y=" << this->y <<endl;
+}
+
+
 

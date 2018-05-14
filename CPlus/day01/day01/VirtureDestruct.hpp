@@ -21,10 +21,15 @@ public:
     J(){
         p = new char[20];
         strcpy(p, "6666");
+        cout << "J 构造"<<endl;
         
     }
     virtual ~J(){
-        delete [] p;
+//        if (p) {
+//            delete [] p;
+//            p = NULL;
+//        }
+        
         cout << "J 析构" << endl;
     }
     
@@ -37,6 +42,7 @@ public:
     JA(){
         p = new char[20];
         strcpy(p, "6666");
+        cout << "JA 构造"<<endl;
         
     }
     virtual ~JA(){
@@ -53,6 +59,7 @@ public:
     JB(){
         p = new char[20];
         strcpy(p, "6666");
+        cout << "JB构造"<<endl;
         
     }
     virtual ~JB(){

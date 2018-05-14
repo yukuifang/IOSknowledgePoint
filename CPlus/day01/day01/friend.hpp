@@ -18,11 +18,10 @@ public:
     A(int a=0,int b=0){
         this->a = a;
         this->b =b;
-        cout << "构造函数"<<endl;
-        
+        cout << "A构造函数"<<endl;
     }
     ~A(){
-        cout << "析构函数"<<endl;
+        cout << "A析构函数"<<endl;
     }
 };
 
@@ -35,11 +34,11 @@ public:
     B(int a=0,int b=0){
         this->a = a;
         this->b =b;
-        cout << "构造函数"<<endl;
+        cout << "B构造函数"<<endl;
         
     }
     ~B(){
-        cout << "析构函数"<<endl;
+        cout << "B析构函数"<<endl;
     }
 public:
     void modifyA(){
@@ -47,7 +46,5 @@ public:
         this->aObject.b = 200;
         cout << this->aObject.a << endl;
         cout << this->aObject.b << endl;
-        
-        
     }
 };

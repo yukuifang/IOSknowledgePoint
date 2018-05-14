@@ -25,6 +25,7 @@
 #include "Step.hpp"
 #include "Figure.hpp"
 #include "MethodTemplate.hpp"
+#include "VirtureDestruct.hpp"
 
 typedef void(*MyFuncPtr)(int a,int b);
 using namespace std;
@@ -240,7 +241,7 @@ int main(int argc, const char * argv[]) {
 //
 //    ptr->parentFun();
 //
-//    ptr = &c;
+//    ptr F= &c;
 //
 //    ptr->descripsion();
 //
@@ -382,6 +383,11 @@ int main(int argc, const char * argv[]) {
 //        myChange(b, b);
 //        myChange(a, b);
         
+    }
+    
+    {
+        J j = JA();
+//        JB jb;
     }
     
     

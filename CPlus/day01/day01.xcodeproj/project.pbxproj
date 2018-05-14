@@ -11,7 +11,6 @@
 		B10F63462089C17D006D3CD6 /* NewType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B10F63442089C17D006D3CD6 /* NewType.cpp */; };
 		B134DFA220637D2E009ACD3F /* reload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B134DFA020637D2E009ACD3F /* reload.cpp */; };
 		B1639830206A0018006937B0 /* friend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B163982E206A0018006937B0 /* friend.cpp */; };
-		B1639833206A1405006937B0 /* OperationOverload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1639831206A1405006937B0 /* OperationOverload.cpp */; };
 		B170E30B206C986B0071AFF4 /* Extend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B170E309206C986B0071AFF4 /* Extend.cpp */; };
 		B173D10D206B517F004170DF /* EqualOperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B173D10B206B517F004170DF /* EqualOperation.cpp */; };
 		B173D110206B6FFA004170DF /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B173D10E206B6FFA004170DF /* Array.cpp */; };
@@ -22,6 +21,7 @@
 		B18D031520720AB80020989D /* VirtureDestruct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B18D031320720AB80020989D /* VirtureDestruct.cpp */; };
 		B19C372020888EB500DEF49D /* Step.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B19C371E20888EB500DEF49D /* Step.cpp */; };
 		B19C372320889F4E00DEF49D /* Figure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B19C372120889F4E00DEF49D /* Figure.cpp */; };
+		B1C61EC020A9290500AA26AC /* OperationOverload.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C61EBF20A9290500AA26AC /* OperationOverload.cpp */; };
 		B1C7A07F206494BB00898DCA /* MyTeacher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A07D206494BB00898DCA /* MyTeacher.cpp */; };
 		B1C7A0852064AD3400898DCA /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A0832064AD3400898DCA /* Cube.cpp */; };
 		B1C7A0882064DA5E00898DCA /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7A0862064DA5E00898DCA /* Test.cpp */; };
@@ -51,8 +51,6 @@
 		B134DFA120637D2E009ACD3F /* reload.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = reload.hpp; sourceTree = "<group>"; };
 		B163982E206A0018006937B0 /* friend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = friend.cpp; sourceTree = "<group>"; };
 		B163982F206A0018006937B0 /* friend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = friend.hpp; sourceTree = "<group>"; };
-		B1639831206A1405006937B0 /* OperationOverload.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OperationOverload.cpp; sourceTree = "<group>"; };
-		B1639832206A1405006937B0 /* OperationOverload.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OperationOverload.hpp; sourceTree = "<group>"; };
 		B170E309206C986B0071AFF4 /* Extend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Extend.cpp; sourceTree = "<group>"; };
 		B170E30A206C986B0071AFF4 /* Extend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Extend.hpp; sourceTree = "<group>"; };
 		B173D10B206B517F004170DF /* EqualOperation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EqualOperation.cpp; sourceTree = "<group>"; };
@@ -73,6 +71,8 @@
 		B19C371F20888EB500DEF49D /* Step.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Step.hpp; sourceTree = "<group>"; };
 		B19C372120889F4E00DEF49D /* Figure.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Figure.cpp; sourceTree = "<group>"; };
 		B19C372220889F4E00DEF49D /* Figure.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Figure.hpp; sourceTree = "<group>"; };
+		B1C61EBE20A9290500AA26AC /* OperationOverload.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OperationOverload.hpp; sourceTree = "<group>"; };
+		B1C61EBF20A9290500AA26AC /* OperationOverload.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OperationOverload.cpp; sourceTree = "<group>"; };
 		B1C7A07D206494BB00898DCA /* MyTeacher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyTeacher.cpp; sourceTree = "<group>"; };
 		B1C7A07E206494BB00898DCA /* MyTeacher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyTeacher.hpp; sourceTree = "<group>"; };
 		B1C7A0832064AD3400898DCA /* Cube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cube.cpp; sourceTree = "<group>"; };
@@ -130,8 +130,8 @@
 				B107349120689BDE00016A13 /* Test2.hpp */,
 				B163982E206A0018006937B0 /* friend.cpp */,
 				B163982F206A0018006937B0 /* friend.hpp */,
-				B1639831206A1405006937B0 /* OperationOverload.cpp */,
-				B1639832206A1405006937B0 /* OperationOverload.hpp */,
+				B1C61EBF20A9290500AA26AC /* OperationOverload.cpp */,
+				B1C61EBE20A9290500AA26AC /* OperationOverload.hpp */,
 				B173D10B206B517F004170DF /* EqualOperation.cpp */,
 				B173D10C206B517F004170DF /* EqualOperation.hpp */,
 				B173D10E206B6FFA004170DF /* Array.cpp */,
@@ -224,12 +224,12 @@
 				B19C372320889F4E00DEF49D /* Figure.cpp in Sources */,
 				B1C8BA35206DD8C000E321A9 /* Extend_2.cpp in Sources */,
 				B10F63462089C17D006D3CD6 /* NewType.cpp in Sources */,
+				B1C61EC020A9290500AA26AC /* OperationOverload.cpp in Sources */,
 				B1C7A0852064AD3400898DCA /* Cube.cpp in Sources */,
 				B18D03122071D5F50020989D /* Polymorphism.cpp in Sources */,
 				B1DC8B5C2092BD74000D2C6C /* MethodTemplate.cpp in Sources */,
 				B1C8BA32206DD3A000E321A9 /* Extend_1.cpp in Sources */,
 				B170E30B206C986B0071AFF4 /* Extend.cpp in Sources */,
-				B1639833206A1405006937B0 /* OperationOverload.cpp in Sources */,
 				B134DFA220637D2E009ACD3F /* reload.cpp in Sources */,
 				B19C372020888EB500DEF49D /* Step.cpp in Sources */,
 				B1C7A07F206494BB00898DCA /* MyTeacher.cpp in Sources */,

@@ -58,6 +58,7 @@ public:
         
     }
     Array& operator=(Array &obj){
+        if(&obj ==  this)return *this;
         if (this->space != NULL) {
             free(this->space);
             this->space = NULL;

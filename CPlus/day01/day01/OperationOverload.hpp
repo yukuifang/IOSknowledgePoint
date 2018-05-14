@@ -16,53 +16,18 @@ private:
     int x;
     int y;
 public:
-    Complex(int x,int y){
-        this->x = x;
-        this->y = y;
-    }
-public:
-    Complex operator+(Complex &c){
-        return Complex(c.x + this->x,c.y + this->y);
-    }
-    Complex operator-(Complex &c){
-        return Complex(c.x - this->x,c.y - this->y);
-    }
-    Complex operator*(Complex &c){
-        return Complex(c.x * this->x,c.y * this->y);
-    }
-    Complex& operator++(){
-        ++ this->x;
-        ++ this->y;
-        return *this;
-    }
-    Complex operator++(int){
-        Complex temp = *this;
-        this->x++;
-        this->y++;
-        return temp;
-    }
-    Complex& operator--(){
-        -- this->x;
-        -- this->y;
-        return *this;
-    }
-    Complex operator--(int){
-        Complex temp = *this;
-        this->x--;
-        this->y--;
-        return temp;
-    }
-    void operator=(Complex &c){
-        
-        
-    }
-    void description(){
-        cout << "x=" << this->x << ",and,y=" << this->y <<endl;
-        
-    }
+    Complex(int x,int y);
+    Complex operator+(const Complex &c);
+    Complex operator-(const Complex &c);
+    Complex operator*(const Complex &c);
+    Complex& operator++();
+    Complex& operator++(int);
+    Complex& operator--();
+    Complex operator--(int);
+    void description();
 };
 //友元类应用场景
-ostream& operator<<(ostream &cout, Complex &c);
+ostream& operator<<(ostream &cout,const Complex &c);
 
 
 
