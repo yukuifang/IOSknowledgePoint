@@ -15,9 +15,19 @@ int main(int argc, const char * argv[]) {
     for (int i=0; i<10; i++) {
         marray.pushBack(i);
     }
-    for (int i=0; i<marray.getMSize(); i++) {
-        cout << marray[i] << endl;
+    marray.pushBack(10);
+//    for (int i=0; i<marray.getMSize(); i++) {
+//        cout << marray[i] << endl;
+//    }
+    MyArray<int> marray2(20);
+    
+    marray2 = marray;
+    
+    for (int i=0; i<marray2.getMSize(); i++) {
+        cout << marray2[i] << endl;
     }
+    
+    
     
     
     return 0;

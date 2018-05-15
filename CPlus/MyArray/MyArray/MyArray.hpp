@@ -58,25 +58,26 @@ public:
         for (int i=0; i<array.mSize; i++) {
             this->pAddr[i] = array.pAddr[i];
         }
-        return this;
+        return *this;
     }
     
     void pushBack(const T& data){
         if (this->mSize >= this->mCapacity) {
             return;
         }
+        //传入的data对象必须实现 = 深拷贝操作
         this->pAddr[this->mSize] = data;
         this->mSize++;
     }
     
-#if 0
-    void pushBack(const T& data){
-        if (this->mSize >= this->mCapacity) {
-            return;
-        }
-        this->pAddr[this->mSize] = data;
-        this->mSize++;
-    }
+#if 1
+//    void pushBack(const T&& data){
+//        if (this->mSize >= this->mCapacity) {
+//            return;
+//        }
+//        this->pAddr[this->mSize] = data;
+//        this->mSize++;
+//    }
 #endif
     ~MyArray(){
         cout<<"析构函数"<<endl;
