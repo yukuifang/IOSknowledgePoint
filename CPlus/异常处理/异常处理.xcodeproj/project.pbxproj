@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B1A8659520ABC18B00157826 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1A8659420ABC18B00157826 /* main.cpp */; };
+		B1A8659D20AC072D00157826 /* CustomException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1A8659B20AC072D00157826 /* CustomException.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		B1A8659120ABC18B00157826 /* 异常处理 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "异常处理"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1A8659420ABC18B00157826 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B1A8659B20AC072D00157826 /* CustomException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CustomException.cpp; sourceTree = "<group>"; };
+		B1A8659C20AC072D00157826 /* CustomException.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CustomException.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				B1A8659420ABC18B00157826 /* main.cpp */,
+				B1A8659B20AC072D00157826 /* CustomException.cpp */,
+				B1A8659C20AC072D00157826 /* CustomException.hpp */,
 			);
 			path = "异常处理";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A8659D20AC072D00157826 /* CustomException.cpp in Sources */,
 				B1A8659520ABC18B00157826 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
