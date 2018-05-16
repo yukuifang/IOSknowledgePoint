@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B1A8659520ABC18B00157826 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1A8659420ABC18B00157826 /* main.cpp */; };
 		B1A8659D20AC072D00157826 /* CustomException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1A8659B20AC072D00157826 /* CustomException.cpp */; };
+		B1A865A020AC36CD00157826 /* ExtendException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1A8659E20AC36CD00157826 /* ExtendException.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		B1A8659420ABC18B00157826 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B1A8659B20AC072D00157826 /* CustomException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CustomException.cpp; sourceTree = "<group>"; };
 		B1A8659C20AC072D00157826 /* CustomException.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CustomException.hpp; sourceTree = "<group>"; };
+		B1A8659E20AC36CD00157826 /* ExtendException.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExtendException.cpp; sourceTree = "<group>"; };
+		B1A8659F20AC36CD00157826 /* ExtendException.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExtendException.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				B1A8659420ABC18B00157826 /* main.cpp */,
 				B1A8659B20AC072D00157826 /* CustomException.cpp */,
 				B1A8659C20AC072D00157826 /* CustomException.hpp */,
+				B1A8659E20AC36CD00157826 /* ExtendException.cpp */,
+				B1A8659F20AC36CD00157826 /* ExtendException.hpp */,
 			);
 			path = "异常处理";
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1A8659D20AC072D00157826 /* CustomException.cpp in Sources */,
+				B1A865A020AC36CD00157826 /* ExtendException.cpp in Sources */,
 				B1A8659520ABC18B00157826 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
