@@ -64,14 +64,18 @@ void swapTwoInt3(int *a, int *b){
 
 void reload(){
     
-    MyFuncPtr p = NULL;
-    p = caluate;
+ 
     
-    p(1,2);
+    cout << "hhe" <<endl;
     
-    p(1.0,2.0);
+    caluate(1);
+    caluate(1, 2);
+    caluate(2.2);
+    caluate(2.1, 2.4);
     
-    p('1','2');
+//    p('1','2');
+    
+    cout << "hhe" <<endl;
     
 }
 
@@ -79,6 +83,9 @@ void reload(){
 
 
 int main(int argc, const char * argv[]) {
+    
+    
+//    reload();
 //    int a = 10;
 //    int b = 20;
 //    swapTwoInt3(&a, &b);
@@ -119,11 +126,15 @@ int main(int argc, const char * argv[]) {
 //    ++e;
 //    --e;
 //    e.description();
+    
+    
+    
 //    Complex f(1,2);
 //    Complex temp =  f++;
+//    temp = f;
 //    temp.description();
 //    f.description();
-//
+
 //    Complex g(1,1);
 //    Complex temp2 =  g--;
 //    temp2.description();

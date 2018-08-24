@@ -17,6 +17,11 @@ Complex::Complex(int x,int y){
     this->y = y;
 }
 
+Complex::Complex(const Complex&c){
+    this->x = c.x;
+    this->y = c.y;
+}
+
 Complex Complex::operator+(const Complex &c){
     return Complex(c.x + this->x,c.y + this->y);
 }
@@ -49,6 +54,11 @@ Complex Complex::operator--(int){
     this->y--;
     return *this;
 }
+void Complex::operator=(const Complex &c){
+    this->x = c.x *2;
+    this->y = c.y *2 ;
+}
+
 
 void Complex::description(){
     cout << "x=" << this->x << ",and,y=" << this->y <<endl;

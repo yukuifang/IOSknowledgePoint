@@ -31,7 +31,7 @@ public:
 // 基本数据类型int异常抛出
 int divide(int x,int y){
     if (y == 0) {
-        throw 666;
+        throw "除数不能为0";
     }
     return x/y;
 }
@@ -41,7 +41,7 @@ bool letter(char c){
     if (c >= 'a' && c <= 'z') {
         return true;
     }else{
-        throw c;
+        throw "不是字母";
     }
 }
 
@@ -49,7 +49,7 @@ bool letter(char c){
 void isNullPointer(char *ptr){
     if (ptr == nullptr) {
         ptr = new char[10];
-        strcpy(ptr, "666");
+        strcpy(ptr, "是空指针哈");
         throw ptr;
     }
 }
@@ -89,13 +89,14 @@ void throwMyMsgException_pointer(){
 void test(){
     try {
         divide(1, 0);
-    } catch (int e) {
+        
+    } catch (char const*e) {
         cout << e <<endl;
     }
     
     try {
         letter('6');
-    }catch (char e) {
+    }catch (char const * e) {
         cout << e <<endl;
         
     }
@@ -116,7 +117,7 @@ void test(){
     
     
     try {
-//        如果出现异常,前面的代码的对象还没出作用域会提前被释放
+//      如果出现异常,前面的代码的对象还没出作用域会提前被释放
         Person p1;
         throwMyException();
     } catch (MyException e) {
@@ -166,6 +167,6 @@ void test4(){
 
 
 int main(int argc, const char * argv[]) {
-    test4();
+    test();
     return 0;
 }
